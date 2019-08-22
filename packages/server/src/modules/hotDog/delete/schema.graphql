@@ -1,0 +1,8 @@
+type Mutation {
+  deleteHotDog(_id: ID!): DeleteHotDogResponse  
+}
+
+type DeleteHotDogResponse {
+  _id: ID
+  errors: [Error!]
+}

@@ -1,0 +1,9 @@
+type Mutation {
+  createHotDog(hotDog: CreateHotDogInput): Response
+}
+
+input CreateHotDogInput {
+  name: String!
+  price: Float!
+  size: Sizes!
+}

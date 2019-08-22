@@ -1,0 +1,4 @@
+type Response {
+  hotDog: HotDog
+  errors: [Error!]
+}

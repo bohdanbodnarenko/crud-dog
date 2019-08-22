@@ -1,0 +1,17 @@
+type HotDog {
+  _id: ID!
+  name: String!
+  price: Float!
+  size: Sizes!
+  img: String
+}
+
+enum Sizes {
+  small
+  medium
+  big
+}
+
+type Query {
+  findHotDogs(ids: [ID!], limit: Int = 10, offset: Int = 0): [HotDog]
+}
